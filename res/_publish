@@ -1,0 +1,16 @@
+#!/bin/bash
+
+pandoc mb_resume.md -o resume.html -t html5 \
+  --smart \
+  --standalone \
+  --email-obfuscation=references \
+  --data-dir=_pandoc \
+  --include-in-header=_pandoc/header_styles.html \
+  --include-before-body=_pandoc/header.html \
+  --include-after-body=_pandoc/footer.html \
+  --variable="pagetitle:Resume :: Michael Bubb"
+
+pandoc mb_resume.md -o mbubb_resume.odt --reference-odt=_pandoc/reference.odt
+
+libreoffice --headless --convert-to doc mbubb_resume.odt
+libreoffice --headless --convert-to pdf mbubb_resume.odt
