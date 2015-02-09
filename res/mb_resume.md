@@ -9,7 +9,7 @@ GitHub: [github.com/mbubb][]
 
 Profile
 -------
-I am an Infrastructure Engineer with 10 years of experience in Linux System Administration and Network Administration. I have specialized in datacenter buildouts including Hadoop clusters, Netezza analytics subnets and Aerospike clusters. I am looking to build upon my automation and datacenter management skills.
+Linux Systems Engineer with 10 years of root on enterprise Linux environments. I have specialized in datacenter buildouts including Hadoop clusters, Netezza analytics subnets and Aerospike clusters. I am looking to build upon my automation and datacenter management skills.
 
 
 Industry Experience
