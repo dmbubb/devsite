@@ -7,7 +7,7 @@ LinkedIn: [linkedin.com/in/mpbubb][]
 GitHub: [github.com/mbubb][]    
 
 
-Profile
+Profile 
 -------
 Linux Systems Engineer with 10 years of root on enterprise Linux environments. I have specialized in datacenter buildouts including Hadoop clusters, Netezza analytics subnets and Aerospike clusters. I am looking to build upon my automation and datacenter management skills.
 
@@ -18,7 +18,7 @@ Industry Experience
 **Senior Systems Engineer** 2014-2015
 [Forensiq][]  New York, NY.
 
-–     Sole Operations Role - Linux Systems  - CentOS 
+–     Sole Operations Role - Linux Systems  - CentOS
 -     SRE for 350 servers in multiple global datacenters    
 –     Ansible configuration     
 –     Jenkins
