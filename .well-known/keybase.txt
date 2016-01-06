@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/mbubb
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://mbubb.devio.us
+  * I am mbubb (https://keybase.io/mbubb) on keybase.
+  * I have a public key with fingerprint 6322 DD4C 4433 FFD7 7D31  695D FDB6 5BCB DA11 50C1
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "6322dd4c4433ffd77d31695dfdb65bcbda1150c1",
+            "host": "keybase.io",
+            "key_id": "fdb65bcbda1150c1",
+            "kid": "0101d8d29a6e0851fe41455648e271b9c1045b65256983abc5b2ca8637966c1370d60a",
+            "uid": "37db8daef5e56ea86bfe6434dcb2cb00",
+            "username": "mbubb"
+        },
+        "service": {
+            "hostname": "mbubb.devio.us",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1423679780,
+    "expire_in": 157680000,
+    "prev": "14a7567b6ab661beb2c1bd654ac33303340b79d0964f705034e030654dd0bae9",
+    "seqno": 6,
+    "tag": "signature"
+}
+
+which yields the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.1
+Comment: https://keybase.io/crypto
+
+yMIZAnicbVJdSBRBHD+trMygHvo0KDcrovOcudmd3b2yfMjgsrQPoU85dnZmdTN3
+z72P/LoHKykjQi2jXoqgrDCiLCrMokSU8MGspEID8SGhIInoydBmpaCH5mWY39fM
+b/h3z5/hSU0aSZy7MlnRF0zqe7kl5ikaupZZIxCbVgmBGqGMTW+GaZUwJ+yYVlQI
+CBj5/ZSKuigiZBhUlimCWJWoQQmWiE6oBqEEdCh4hVI74jp4DNEizGfaHOOHkEk5
++h992TQBIIBUoX5VwwwoEjSYCEVJwqLC/DIkqg6BKHGvX8KqgjSiS8SvawpGsoqx
+DpEMKAYaj4tNxyGZEoVqzJCYhBnXEYNhEYlU5zYCgCuMMMfSyhlXl5MYIULCK3Ao
+burM7e/W+Jf2URY3bV8swq1hx47aun2Uc6XRaDjgWqNVYVd7jJHQn5QQMS3Kf5Eb
+4syJmLYlBCBX6lHTjYWiH2FZlRXgFVhl2HRYyHQVkowVwJd7DYvzSChqsoRlgjWC
+MSSMN4CEYknUdIQQQEgERFYpULFoyEACSGQAAc5TCojGVMHtVWHZQgDzZ2olPDJi
+llhaNOYwIdH14vBMT1KqJ2VWsjsHntS5C/5Ox8UFs6dya3tPR0/dbpq62tbcf+7J
+ZP7Ztb7qxMSPrWnJHR/HQovb3qweHR2eme5PXzpnm0KuDezffr3xa0v72eXHn3Vn
+PAjBk/U/X73PWd66xBfsqij8NO/q1se/Oh/1vLw8qWu7cpfV33u6+11+bkbe+OCm
+RSvndX4oAev2vM4c2GgNFy1eU5tW13HhefhGdt36I99qJw+V5R08U7CqYWPx3vLG
+FGf9zrvS/aDmfdvzeUc4PrGid+XYnYX5qnN+cN/4TVDacP5uJK36QE0wu6C4pd2b
+VzCYk55f2Pn+S2N9vP/WVOPIyJGHlclNlc3vNn/fPmRlNExs2SEY41m7W2pO3Ntw
+qbu1LYtd+g1hMSgb
+=tqxG
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mbubb
+
+==================================================================
+

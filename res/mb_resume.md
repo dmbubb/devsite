@@ -1,6 +1,6 @@
 Michael Bubb
 =============
- 
+
 Phone: +1.646.783.8769    
 Email: <michael.bubb@gmail.com>    
 LinkedIn: [linkedin.com/in/mpbubb][]    
@@ -15,14 +15,23 @@ Linux Systems Engineer with 10 years of root on enterprise Linux environments. I
 Industry Experience
 -------------------
 
-**Systems Engineer** 2014- 
+**Senior Systems Engineer** 2014-2015
+[Forensiq][]  New York, NY.
+
+–     Sole Operations Role - Linux Systems  - CentOS 
+-     SRE for 350 servers in multiple global datacenters    
+–     Ansible configuration     
+–     Jenkins
+-     Github
+
+**Systems Engineer** 2014-2015
 [OnDeck][]  New York, NY.
 
 –     Linux Systems  - CentOS and Ubuntu    
 –     Ansible configuration     
 –     Postgresql support     
 –     Netezza administration  
-–     Hadoop administration 
+–     Hadoop administration
 
 **Operations Engineer** 2010–2014  
 [Collective][]  New York, NY.
@@ -65,7 +74,7 @@ optPart, New York, NY.
 – website hosting on a RedHat server at Datapipe.    
 
 **Curriculum and Teaching Manager** 1995-1999
-[Berlitz Korea][] Seoul, Korea. 
+[Berlitz Korea][] Seoul, Korea.
 
 –     On a team that opened the first school in the Korean market.     
 –     Hired, trained and managed teachers.    
@@ -86,9 +95,9 @@ Education
 Additional Experience
 ---------------------
 
-- 2013-present technical volunteer, **[Milemesh][]**. 
+- 2013-present technical volunteer, **[Milemesh][]**.
 - 2012-present emergency shelter and communications, **[Hoboken CERT][]**.
-- 2004-2006 webmaster; editor, **NonServiam Press**. 
+- 2004-2006 webmaster; editor, **NonServiam Press**.
 - 1999-2004 webmaster; editor, **[The Brooklyn Rail][]**.
 - 1989-1991 prep cook; garde manger, **[Frog and the Peach][]**.
 
@@ -107,5 +116,3 @@ Additional Experience
 [Milemesh]: http://www.milemesh.com/
 [Hoboken CERT]: http://www.hobokencert.org/
 [Frog and the Peach]: http://frogandpeach.com/
-
-
