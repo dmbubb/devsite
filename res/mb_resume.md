@@ -15,7 +15,7 @@ Linux Systems Engineer with 10 years of root on enterprise Linux environments. I
 Industry Experience
 -------------------
 
-**Senior Systems Engineer** 2014-2015
+**Senior Systems Engineer** 2015-present
 [Forensiq][]  New York, NY.
 
 –     Sole Operations Role - Linux Systems  - CentOS
