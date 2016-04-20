@@ -5,7 +5,7 @@ Phone: +1.646.783.8769
 Email: <michael.bubb@gmail.com>    
 LinkedIn: [linkedin.com/in/mpbubb][]    
 GitHub: [github.com/mbubb][]    
-[http://mbubb.devio.us/gpg/pub_key.asc][gpg public key]
+gpg pub key: [http://mbubb.devio.us/gpg/pub_key.asc][]
 
 Profile
 -------
