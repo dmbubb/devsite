@@ -105,6 +105,7 @@ Additional Experience
 
 [linkedin.com/in/mpbubb]: https://www.linkedin.com/in/mpbubb
 [github.com/mbubb]: https://github.com/mbubb
+[mbubb.devio.us/gpg/pub_key.asc]: http://mbubb.devio.us/gpg/pub_key.asc
 [Collective]: http://collective.com/main.html
 [OnDeck]: https://www.ondeck.com/
 [Shipco]: http://shipco.com/
