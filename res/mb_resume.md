@@ -9,45 +9,44 @@ gpgKey: [mbubb.devio.us/gpg/pub_key.asc][]
 
 Profile
 -------
-Linux Systems Engineer with 10 years of root on enterprise Linux environments. I have specialized in datacenter buildouts including Hadoop clusters, Netezza analytics subnets and Aerospike clusters. I am looking to build upon my automation and datacenter management skills.
+Linux Systems Engineer with over a decade of root access on enterprise Linux environments. I have specialized in datacenter buildouts including Hadoop clusters, Netezza analytics subnets and Aerospike clusters. Often in  a 'sole sysadmin' role, I have built and lead teams as organizations have gone through rapid growth. Currently am working to improve tool building skills as well as gaining experience with infrastructure management frameworks like Ansible and Kubernetes.
 
 
 Industry Experience
 -------------------
 
-**Senior Systems Engineer** 2015-present
-[Forensiq][]  New York, NY.
+**Senior Systems Engineer** | May 2015 – present    
+[Forensiq][]  New York, NY. ([Impact Radius][] as of July 2016 )
 
-–     Sole Operations Role - Linux Systems  - CentOS
--     SRE for 350 servers in multiple global datacenters    
-–     Ansible configuration     
-–     Jenkins
--     Github
+–     SRE for 350 servers in multiple global datacenters (98% CentOS 6.x)    
+–     Infrastructure management (DNS, System and Network Monitoring)    
+–     Build/Deploy with Ansible-Jenkins-Github    
+–     Ansible project lead/ Jenkins admin    
+–     Working towards CI with Automation engineer (Kubernetes)    
+–     Hiring remote and local engineers    
+–     Vendor relations (datacenters, service providers)    
 
-**Systems Engineer** 2014-2015
+**Systems Engineer** | August 2014 – May 2015    
 [OnDeck][]  New York, NY.
 
-–     Linux Systems  - CentOS and Ubuntu    
+–     Linux System Administration (CentOS and Ubuntu)    
 –     Ansible configuration     
-–     Postgresql support     
-–     Netezza administration  
-–     Hadoop administration
+–     Postgresql support    
 
-**Operations Engineer** 2010–2014  
+**Operations Engineer** | June 2010 – August 2014    
 [Collective][]  New York, NY.
 
-–     General Linux System Administration - CentOS and Ubuntu    
+–     General Linux System Administration – CentOS and Ubuntu    
 –     Datacenter management     
 –     Hadoop buildout and support     
 –     Netezza administration     
-–     Automation - Cobbler; Puppet; Razor; Ansible    
+–     Automation – Cobbler; Puppet; Razor; Ansible    
 –     DNS administration      
 –     Bash and Python scripting     
 –     git and github code management     
 –     monitoring with Nagios; Boundary; Circonus; Catchpoint    
 
-
-**Systems Administrator** 2006-2010    
+**Systems Administrator** | 2006 – 2010    
 [Shipco][] Hoboken, NJ.    
 
 –      Linux and UNIX System Administration     
@@ -59,47 +58,39 @@ Industry Experience
 –      Responsible for purchasing and billing authorization     
 –      Help Desk Management for a 700 employee, 50 office global company     
 
-
-**Junior System Administrator** 2005-2006    
+**Junior System Administrator** | 2005 – 2006    
 [Stevens Institute of Technology][], Hoboken,NJ.     
 
 While enrolled at Stevens in Computer Science I worked as a UNIX System Administrator in the NetBSD Computer lab as well as on a Beowulf Cluster.     
 
-
-**Network and Systems Administration (Consultant)** 2000-2005
-optPart, New York, NY.
+**Network and Systems Administration (independent consultant)** | 2000 – 2005
 
 – Setup networks and practice management systems for lawfirms and veterinary clinics in NYC and Northern NJ.     
 – Handled legal discovery/ litigation management for lawfirms.    
 – website hosting on a RedHat server at Datapipe.    
 
-**Curriculum and Teaching Manager** 1995-1999
-[Berlitz Korea][] Seoul, Korea.
-
-–     On a team that opened the first school in the Korean market.     
-–     Hired, trained and managed teachers.    
-–     Developed curricula for clients in Korea including: Samsung, Korean Air, KPMG Korea, P&G and LG.    
-
-
 Education
 ---------
 
 **Degree**   
--    BA English, minor in Political Science from **[Rutgers University, New Bruswick][]** (1992).    
+–    BA English, minor in Political Science from **[Rutgers University, New Bruswick][]** (1992).    
 
-**Nonmatriculated**        
--    40 credits Computer Science, **[Stevens Institute of Technology][]**, Hoboken, NJ (2005-2006).    
--    48 credits Comparative Literature, PhD program, **[NYU][]**, New York, NY (1993-1995).     
+**Non-matriculated**        
+–    40 credits Computer Science, **[Stevens Institute of Technology][]**, Hoboken, NJ (2005-2006).    
+–    48 credits Comparative Literature, PhD program, **[NYU][]**, New York, NY (1993-1995).     
 
 
 Additional Experience
 ---------------------
 
-- 2013-present technical volunteer, **[Milemesh][]**.
-- 2012-present emergency shelter and communications, **[Hoboken CERT][]**.
-- 2004-2006 webmaster; editor, **NonServiam Press**.
-- 1999-2004 webmaster; editor, **[The Brooklyn Rail][]**.
-- 1989-1991 prep cook; garde manger, **[Frog and the Peach][]**.
+– 2016 | EMR license , **[Hoboken Volunteer Ambulance][]**    
+– 2014–present | middle school volunteer teacher (Scratch, Python), **[Elysian Charter School][]**    
+– 2013-2015 | technical volunteer, **[Milemesh][]**.    
+– 2012-present | emergency shelter and communications, **[Hoboken CERT][]**.    
+– 2004-2006 | webmaster; editor, **NonServiam Press**.    
+– 1999-2004 | webmaster; editor, **[The Brooklyn Rail][]**.    
+– 1995–1999 | curriculum dev; teaching manager **[Berlitz Korea][]** Seoul, Korea.    
+– 1989-1991 | prep cook; garde manger, **[Frog and the Peach][]**.    
 
 
 
@@ -110,7 +101,7 @@ Additional Experience
 [OnDeck]: https://www.ondeck.com/
 [Shipco]: http://shipco.com/
 [Forensiq]: http://www.forensiq.com/
-[Berlitz, Korea]: http://berlitz.co.kr/
+[Berlitz Korea]: http://berlitz.co.kr/
 [Rutgers University, New Bruswick]: http://www.rutgers.edu/
 [NYU]: http://www.nyu.edu/
 [Stevens Institute of Technology]: http://www.stevens.edu/sit/
@@ -118,3 +109,6 @@ Additional Experience
 [Milemesh]: http://www.milemesh.com/
 [Hoboken CERT]: http://www.hobokencert.org/
 [Frog and the Peach]: http://frogandpeach.com/
+[Impact Radius]: https://www.impactradius.com/
+[Hoboken Volunteer Ambulance]: http://hobokenems.com/
+[Elysian Charter School]: http://www.ecsnj.org/
