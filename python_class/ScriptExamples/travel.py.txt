@@ -1,0 +1,26 @@
+# Travel budget for me and Mom
+
+allowance = 2000.0
+
+airfare = 2 * 375.0 
+BullsGame = 2 * 55.00
+
+# Hotel costs
+
+posh = 200.0   
+cheap = 100.0
+
+nights = 5
+
+poshTotal = posh * nights
+cheapTotal = cheap * nights
+
+total = airfare + BullsGame + poshTotal
+
+spending = allowance - total
+
+print("Using posh hotel I will have this much spending money:")
+print(spending)
+
+# Exercise: do the same thing for cheap hotel
+

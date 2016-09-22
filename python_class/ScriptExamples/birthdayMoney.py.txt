@@ -1,0 +1,38 @@
+# script to figure out how to spend birthday money
+
+cash_on_hand = 27.50   
+check_from_Uncle = 85.0
+footlockerGiftCard = 49.99
+
+avail = cash_on_hand + check_from_Uncle + footlockerGiftCard
+
+# costs of some items
+
+Jordan1 = 160.0
+Jordan5 = 190.0
+Ultraboost = 180.0
+Converse = 35.50
+AdidasNMD = 120.0
+Yeezy350 = 200.00
+SupremeKermitShirt = 300.0
+SupremeToothpick = 20.0
+haircut = 20.0
+hat = 25.0
+skateboard = 56.0
+deluxxboard = 89.0
+
+choice1 = [Yeezy350, SupremeKermitShirt, Jordan5]
+choice2 = [AdidasNMD, SupremeToothpick, deluxxboard]
+choice3 = [Converse, haircut, deluxxboard]
+
+if sum(choice1) < avail :
+    print("Buy first choice", choice1)
+elif sum(choice2) < avail :
+    print("Buy second choice", choice2)
+elif sum(choice3) < avail :
+    print("Buy third choice", choice3)
+
+# Future: what we'd really like is a way to try all combinations
+# and find out which is the best.
+
+    
