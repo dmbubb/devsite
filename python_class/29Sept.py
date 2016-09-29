@@ -1,0 +1,95 @@
+#USWNT stat exercise
+#Team variables
+USWNT_total_minutes = 1816
+# Player Variables
+#DunnCrystal
+Dunn_games = 20.0
+Dunn_minutes = 1147.0
+Dunn_assists = 5.0
+Dunn_goals = 12.0
+Dunn_ycards = 1.0
+#JohnstonJ
+Johnston_games = 16.0
+Johnston_minutes = 1210.0
+Johnston_assists = 1.0
+Johnston_goals = 3.0
+Johnston_ycards = 2.0
+#LongAllie
+Long_games = 11.0
+Long_minutes = 781.0
+Long_assists = 2.0
+Long_goals = 2.0
+Long_ycards = 1.0
+#MorganAlex
+Morgan_games = 18.0
+Morgan_minutes = 1369.0
+Morgan_assists = 3.0
+Morgan_goals = 15.0
+Morgan_ycards = 0.0
+#LloydC
+Lloyd_games = 18.0
+Lloyd_minutes = 1418.0
+Lloyd_assists = 10.0
+Lloyd_goals = 14.0
+Lloyd_ycards = 1.0
+#SoloHope
+Solo_games = 17.0
+Solo_minutes = 1501.0
+Solo_goalsfor = 44.0
+Solo_goalsagainst = 7.0
+#HarrisAshly
+Harris_games = 1.0
+Harris_minutes = 90.0
+Harris_goalsfor = 9.0
+Harris_goalsagainst = 0.0
+#NaeherAlyssa
+Naeher_games = 3.0
+Naeher_minutes = 225.0
+Naeher_goalsfor = 14.0
+Naeher_goalsagainst = 0.0
+
+# Goals per game example
+Dunn_goals_per_game = Dunn_goals/Dunn_games
+print("Dunn goals per game average is: ")
+print(Dunn_goals_per_game)
+
+# Points per game example
+Lloyd_points_per_game = ((Lloyd_goals * 2) + Lloyd_assists)/Lloyd_games
+print("Lloyd points per game:")
+print(Lloyd_points_per_game)
+
+#GAA example
+Solo_goalsagainst_ave = (Solo_goalsagainst * 90) / Solo_minutes
+print("Solo GAA")
+print(Solo_goalsagainst_ave)
+
+#Yellow card frequency
+Dunn_ycard_freq = Dunn_minutes/Dunn_ycards
+print("Dunn yellow card freq is one ycard every : ")
+print(Dunn_ycard_freq)
+
+# 1 Dunn points per season
+#Dunn_points=(Dunn_goals * 2) + Dunn_assists
+#print("Dunn points for 2016 season: ", Dunn_points)
+
+
+# more frequent yellow cards
+Long_ycard_freq = Long_minutes/Long_ycards
+print("Long has one yellowcard every ",Long_ycard_freq, " mins")
+Johnston_ycard_freq = Johnston_minutes/Johnston_ycards
+print("Johnston  has one yellowcard every ",Johnston_ycard_freq, " mins")
+#
+if Long_ycard_freq > Johnston_ycard_freq:
+    print("Bad Johnston!")
+else:
+    print("Bad Long!")
+
+Long_ycard_per_game = Long_games/Long_ycards
+print("Long has ", Long_ycard_per_game," yellow cards per game")
+Johnston_ycard_per_game = Johnston_games/Johnston_ycards
+print("Johnston  has ",Johnston_ycard_per_game, " yellow cards per game")
+#
+if Johnston_ycard_per_game > Long_ycard_per_game:
+    print("tssk tsssk Johnson!")
+else:
+    print("tssk tsssk Long!")
