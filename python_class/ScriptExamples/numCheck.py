@@ -1,0 +1,13 @@
+num1=int(input())
+num2=int(input())
+nsum=num1+num2
+ndiff=num1-num2
+nmult=num1*num2
+print(nsum)
+print(ndiff)
+print(nmult)
+#
+#num1=int(input())
+#num2=int(input())
+print(num1//num2)
+print(float(num1)/float(num2))
