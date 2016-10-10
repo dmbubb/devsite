@@ -1,0 +1,12 @@
+myList = []
+N = int(input())
+
+for _ in range(N):
+  s = raw_input().split()
+  cmd = s[0]
+  args = s[1:]
+  if cmd == "print":
+    print(myList)
+  else:
+    cmd += :"("+",".join.(args) +")"
+    eval("l."+cmd)
