@@ -5,7 +5,7 @@ def left_shift(n,k,a):
    for _ in range(k):
       tmpa = a.pop(0)
       a.append(tmpa)
-   print(*a)
+#   print(*a)
 
 left_shift(n,k,a)
 #answer = left_shift(n,k,a);
