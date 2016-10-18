@@ -4,12 +4,12 @@ from math import pi
 from turtle import *
 
 # Add code to input the daily sleep, school, and screen hours
-sleep = 
-school =
-screen = 
+#sleep =
+#school =
+#screen =
 
 # Check whether the hours are reasonable; if not, change them
-......
+#......
 
 # convert hours/24  into  degrees/360
 m = 360/24
@@ -29,5 +29,4 @@ for i in range(360):
     right(1)
 
 # draw pie pieces
-.........
-    
+#.........
