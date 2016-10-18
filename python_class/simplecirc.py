@@ -1,0 +1,20 @@
+import turtle
+t = turtle.Pen()
+radius = 120
+ang = [45,72,110]
+#t.penup()
+t.home()
+t.circle(radius)
+t.home()
+t.setheading(0)
+t.forward(radius)
+t.home()
+t.setheading(ang[0])
+t.forward(radius)
+t.pendown()
+t.color('palegreen')
+t.begin_fill()
+t.end_fill()
+t.home()
+t.setheading(ang[1])
+t.color('black')

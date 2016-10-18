@@ -1,5 +1,6 @@
 import turtle
 import sys
+from math import pi
 
 ###### new ideas
 #"{0:.1f}".format(etc_percent * 100)
@@ -18,6 +19,7 @@ heading = 90
 radius = 150
 circle_x = 100
 circle_y = 0
+start_angle = 0
 #
 ###### Sleep hours
 sleep_hours = float(input("How many hours spent sleeping? (" + str(rem_hours) + ") remaining "))
@@ -55,42 +57,83 @@ if rem_hours < day_hours:
 print(str(sleep_percent) + " " + str(school_percent) + " " + str(play_percent) + " " + str(etc_percent))
 #
 tur = turtle.Pen()
+# draw circle centered at (0,0)
+circumf = 2 * pi * radius
+seg = circumf / 360 # size of one segment of circle
+tur.penup()
+tur.goto(circle_x,radius)
+tur.pendown()
+for i in range(360):
+    tur.forward(seg)
+    tur.right(1)
 ###### print header
 tur.penup()
 tur.setpos(writing_x,writing_y)
 tur.write("Activities and percent of day", font=("Times", 24, "normal"))
 #
 ###### print sleeping info
-#tur.penup()
-tur.pendown()
+sleep_angle = 360 * (float(sleep_percent)/100)
+tur.penup()
+#tur.pendown() # fro troubleshooting
 tur.color("blue")
 tur.setpos(writing_x,writing_y-25)
 tur.write(str(sleep_hours) + " hrs spent  spent sleeping: " + str(sleep_percent) + "% of the day", font=("Times", 16, "normal"))
-slice_angle = 360 * (float(sleep_percent)/100)
-tur.setpos(circle_x,circle_y)
-tur.setheading(heading)
-#tur.pendown()
 tur.begin_fill()
-tur.circle(radius, extent=slice_angle)
 tur.goto(circle_x,circle_y)
+tur.pendown()
+tur.setheading(start_angle)
+tur.forward(radius)
 #tur.penup()
-tur.setheading(heading)
-tur.setpos(circle_x,circle_y)
+tur.goto(circle_x,circle_y)
+start_angle = start_angle + sleep_angle
+tur.setheading(start_angle)
+tur.forward(radius)
+#tur.penup()
+tur.goto(circle_x,circle_y)
+tur.penup()
 tur.end_fill()
 #
 ###### print school info
+school_angle = 360 * (float(school_percent)/100)
 tur.penup()
 tur.color("green")
 tur.setpos(writing_x,writing_y-50)
 tur.write(str(school_hours) + " hrs spent at school: " + str(school_percent) + "% of the day", font=("Times", 16, "normal"))
-slice_angle = 360 * (school_percent)
+tur.begin_fill()
+tur.goto(circle_x,circle_y)
+tur.pendown()
+tur.setheading(start_angle)
+tur.forward(radius)
+#tur.penup()
+tur.goto(circle_x,circle_y)
+start_angle = start_angle + school_angle
+tur.setheading(start_angle+1)
+tur.forward(radius)
+#tur.penup()
+tur.goto(circle_x,circle_y)
+tur.penup()
+tur.end_fill()
 #
 ###### print playing info
+play_angle = 360 * (float(play_percent)/100)
 tur.penup()
 tur.color("orange")
 tur.setpos(writing_x,writing_y-75)
 tur.write(str(play_hours) + " hrs spent playing: " + str(play_percent) + "% of the day", font=("Times", 16, "normal"))
-slice_angle = 360 * (play_percent)
+tur.begin_fill()
+tur.goto(circle_x,circle_y)
+tur.pendown()
+tur.setheading(start_angle)
+tur.forward(radius)
+#tur.penup()
+tur.goto(circle_x,circle_y)
+start_angle = start_angle + play_angle
+tur.setheading(start_angle+1)
+tur.forward(radius)
+#tur.penup()
+tur.goto(circle_x,circle_y)
+tur.penup()
+tur.end_fill()
 
 #
 ###### print 'etc' info
@@ -98,8 +141,22 @@ tur.penup()
 tur.color("gray")
 tur.setpos(writing_x,writing_y-100)
 if etc_hours > 0:
+    etc_angle = 360 * (float(etc_percent)/100)
     tur.write("Percent of the day spent on other things: " + str(etc_percent) + "%", font=("Times", 16, "normal"))
-    slice_angle = 360 * (etc_percent)
+    tur.begin_fill()
+    tur.goto(circle_x,circle_y)
+    tur.pendown()
+    tur.setheading(start_angle)
+    tur.forward(radius)
+    #tur.penup()
+    tur.goto(circle_x,circle_y)
+    start_angle = start_angle + etc_angle
+    tur.setheading(start_angle+1)
+    tur.forward(radius)
+    #tur.penup()
+    tur.goto(circle_x,circle_y)
+    tur.penup()
+    tur.end_fill()
 
     
 #
