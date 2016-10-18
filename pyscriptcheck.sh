@@ -3,6 +3,6 @@
 FILEPATH=$(pwd)
 find ${FILEPATH} -iname "*.pyc" -exec rm {} \;
 python -m compileall -q ${FILEPATH}
+compile_result =  $?
 find ${FILEPATH} -iname "*.pyc" -exec rm {} \;
-#python3 -m compileall -q ${FILEPATH}
-#find ${FILEPATH} -iname "*.pyc" -exec rm {} \;
+exit ${compile_result}
