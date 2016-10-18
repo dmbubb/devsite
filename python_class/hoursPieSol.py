@@ -6,7 +6,7 @@ from turtle import *
 # Add code to input the daily sleep, school, and screen hours
 #sleep =
 #school =
-#screen =
+screen =
 
 # Check whether the hours are reasonable; if not, change them
 #......
