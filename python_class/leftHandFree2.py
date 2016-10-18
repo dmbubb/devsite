@@ -12,6 +12,7 @@ def load_array(n,k):
 def left_shift(k,a):
    for _ in range(k):
       a.append(a.pop(0))
+      # following dewsnt work for 2.7
 #   print(*a)
 
 #load_array(n,k)
