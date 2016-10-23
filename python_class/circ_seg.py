@@ -13,6 +13,7 @@ def circleSegs(cols,angs):
   	tur.goto(25,50)
   	tur.begin_fill()
   	tur.circle(radius,angs[i])
+  	tur.left(90)
   	tur.end_fill()
 
 tur.ht()

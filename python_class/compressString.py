@@ -4,7 +4,7 @@ import os
 
 #teststr = "wwejfpwejfpweaaaaamvdmVirknafnbbbbbaSpfjpsfjienfdfidcfjfbnsdjfcCcccc"
 
- 
+
 def  compress(strr):
     ins_char = ""
     res = ""
@@ -20,15 +20,13 @@ def  compress(strr):
             ins_char = strr[i]
 
         reslist.append(ins_char)
-             
-    
-    
+
+
+
     res = str(reslist)
     return res
 
 
-def locateDupe(myStr):
-    for _
 
 
 print(str(compress(teststr)))
