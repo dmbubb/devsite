@@ -74,11 +74,11 @@ tur.write("Activities and percent of day", font=("Times", 24, "normal"))
 ###### print sleeping info
 sleep_angle = 360 * (float(sleep_percent)/100)
 tur.penup()
-#tur.pendown() # fro troubleshooting
+#tur.pendown() # for troubleshooting
 tur.color("blue")
 tur.setpos(writing_x,writing_y-25)
 tur.write(str(sleep_hours) + " hrs spent  spent sleeping: " + str(sleep_percent) + "% of the day", font=("Times", 16, "normal"))
-tur.begin_fill()
+
 tur.goto(circle_x,circle_y)
 tur.pendown()
 tur.setheading(start_angle)
@@ -91,7 +91,7 @@ tur.forward(radius)
 #tur.penup()
 tur.goto(circle_x,circle_y)
 tur.penup()
-tur.end_fill()
+
 #
 ###### print school info
 school_angle = 360 * (float(school_percent)/100)
@@ -99,7 +99,7 @@ tur.penup()
 tur.color("green")
 tur.setpos(writing_x,writing_y-50)
 tur.write(str(school_hours) + " hrs spent at school: " + str(school_percent) + "% of the day", font=("Times", 16, "normal"))
-tur.begin_fill()
+
 tur.goto(circle_x,circle_y)
 tur.pendown()
 tur.setheading(start_angle)
@@ -112,7 +112,7 @@ tur.forward(radius)
 #tur.penup()
 tur.goto(circle_x,circle_y)
 tur.penup()
-tur.end_fill()
+
 #
 ###### print playing info
 play_angle = 360 * (float(play_percent)/100)
@@ -120,11 +120,12 @@ tur.penup()
 tur.color("orange")
 tur.setpos(writing_x,writing_y-75)
 tur.write(str(play_hours) + " hrs spent playing: " + str(play_percent) + "% of the day", font=("Times", 16, "normal"))
-tur.begin_fill()
+
 tur.goto(circle_x,circle_y)
 tur.pendown()
 tur.setheading(start_angle)
 tur.forward(radius)
+
 #tur.penup()
 tur.goto(circle_x,circle_y)
 start_angle = start_angle + play_angle
@@ -133,7 +134,7 @@ tur.forward(radius)
 #tur.penup()
 tur.goto(circle_x,circle_y)
 tur.penup()
-tur.end_fill()
+
 
 #
 ###### print 'etc' info
@@ -143,7 +144,7 @@ tur.setpos(writing_x,writing_y-100)
 if etc_hours > 0:
     etc_angle = 360 * (float(etc_percent)/100)
     tur.write("Percent of the day spent on other things: " + str(etc_percent) + "%", font=("Times", 16, "normal"))
-    tur.begin_fill()
+    
     tur.goto(circle_x,circle_y)
     tur.pendown()
     tur.setheading(start_angle)
@@ -156,7 +157,7 @@ if etc_hours > 0:
     #tur.penup()
     tur.goto(circle_x,circle_y)
     tur.penup()
-    tur.end_fill()
+    
 
     
 #
