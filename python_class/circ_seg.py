@@ -9,11 +9,12 @@ cols = ["orange","blue","gray","green","darkred"]
 def circleSegs(cols,angs):
   for i in range(len(angs)):
   	tur.penup()
+  	tur.home()
   	tur.color(cols[i])
-  	tur.goto(25,50)
+  	tur.forward(radius)
   	tur.begin_fill()
+  	
   	tur.circle(radius,angs[i])
-  	tur.left(90)
   	tur.end_fill()
 
 tur.ht()
