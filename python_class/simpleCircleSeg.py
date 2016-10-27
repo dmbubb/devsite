@@ -1,0 +1,83 @@
+import turtle
+t = turtle
+radius=150
+sleep = int(input("how much sleep per day? "))
+school = int(input("hours of school? " ))
+screen =int(input("screen time? " ))
+
+sleep_angle = sleep/24 * 360
+school_angle = school/24 * 360
+screen_angle = screen/24 * 360
+etc_angle = 360 - (sleep_angle + school_angle + screen_angle)
+t.color("darkgreen")
+t.fillcolor("lightgreen")
+#
+t.penup()
+f = ("Times", 24, "normal")
+t.goto(-130,220)
+t.setheading(0)
+t.write("sleep", font=f)
+#
+t.home()
+t.pendown()
+t.begin_fill()
+t.forward(radius)
+t.left(90)
+t.circle(radius, sleep_angle)
+t.home()
+t.end_fill()
+t.color("blue")
+t.fillcolor("cyan")
+#
+t.penup()
+f = ("Times", 24, "normal")
+t.goto(-130,200)
+t.setheading(0)
+t.write("school", font=f)
+#
+t.home()
+t.pendown()
+t.left(sleep_angle)
+t.begin_fill()
+t.forward(radius)
+t.left(90)
+t.circle(radius, school_angle)
+t.home()
+t.end_fill()
+t.color("darkorange")
+t.fillcolor("orange")
+#
+t.penup()
+f = ("Times", 24, "normal")
+t.goto(-130,180)
+t.setheading(0)
+t.write("screen", font=f)
+#
+t.home()
+t.pendown()
+t.left(sleep_angle+school_angle)
+t.begin_fill()
+t.forward(radius)
+t.left(90)
+t.circle(radius, screen_angle)
+t.home()
+t.end_fill()
+t.color("darkgray")
+t.fillcolor("gray")
+#
+t.penup()
+f = ("Times", 24, "normal")
+t.goto(-130,160)
+t.setheading(0)
+t.write("other things", font=f)
+#
+t.home()
+t.pendown()
+t.left(sleep_angle+school_angle+screen_angle)
+t.begin_fill()
+t.forward(radius)
+t.left(90)
+t.circle(radius, etc_angle)
+t.home()
+t.end_fill()
+#t.clear()
