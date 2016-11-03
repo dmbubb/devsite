@@ -1,3 +1,6 @@
+#
+# find me at http://mbubb.devio.us/python_class/simplePoly.py
+#
 from turtle import *
 from random import *
 
