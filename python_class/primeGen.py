@@ -14,10 +14,10 @@ while len(numpool) > 0:
             print(len(numpool))
             numpool.remove(numpool[j])
             j += 1
- #       primelist.append(numpool[j])
+        primelist.append(numpool[j])
  
 
-print(numpool)
+print(primeist)
         
     
     

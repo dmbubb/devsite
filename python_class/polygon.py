@@ -1,6 +1,6 @@
 import turtle
 
-def drawPolygon(t, sideLength, numSides):
+def drawPolygon(sideLength, numSides, color):
     turnAngle = 360 / numSides
     for i in range(numSides):
         t.forward(sideLength)
