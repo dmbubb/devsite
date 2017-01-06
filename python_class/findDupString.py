@@ -20,4 +20,4 @@ def findDup(myStr):
         
 
 
-findDup(teststr)
+ffindDup(teststr)
