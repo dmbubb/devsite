@@ -30,7 +30,7 @@ full_moon_tides = [1.46, 1.6, 1.42, 1.39, 1.5, 1.42, 1.56, 1.42, 1.43, 1.51, 1.6
 
 summ = 0
 
-for i in range(len(full_moon_tides):
+for i in range(len(full_moon_tides)):
                summ = summ + full_moon_tides[i]
 
 # ave_high_tide = ?
@@ -40,14 +40,3 @@ for i in range(len(full_moon_tides):
 ###  ... min tide?
 
 ###  How much higher is Nov 15 tide than the average?, previous max?
-
-
-            
-
-
-
-
-
-
-
-    
