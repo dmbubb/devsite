@@ -1,4 +1,4 @@
-S = str(input())
+S = str(input("type string to flip "))
 SO = ""
 
 for ch in S:
@@ -9,5 +9,5 @@ for ch in S:
     else:
         SO = SO + ch
 
-S = SO    
+S = SO
 print(S)
