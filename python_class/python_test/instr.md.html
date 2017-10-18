@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>instr</title>
+      <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(85, 85, 85); background-color: white; overflow: auto; }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(3, 3, 3); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgb(3, 3, 3); }
+.markdown-preview:not([data-use-github-style]) del { color: rgb(126, 126, 126); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: black; }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(126, 126, 126); border-color: rgb(214, 214, 214); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top: 2px dashed rgb(214, 214, 214); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgb(3, 3, 3); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(214, 214, 214); }
+.markdown-preview:not([data-use-github-style]) code { color: rgb(3, 3, 3); background-color: rgb(240, 240, 240); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(245, 245, 245); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(3, 3, 3); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(214, 214, 214) rgb(214, 214, 214) rgb(199, 199, 199); border-image: initial; background-color: rgb(240, 240, 240); }
+.markdown-preview[data-use-github-style] { font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255); overflow: scroll; }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left: 4px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: keep-all; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { background-color: rgb(255, 255, 255); border-top: 1px solid rgb(204, 204, 204); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; background-color: rgba(0, 0, 0, 0.0392157); border-radius: 3px; }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; background: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border-radius: 3px; }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { word-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; background-color: transparent; border: 0px; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; background-color: rgb(252, 252, 252); border-width: 1px; border-style: solid; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-image: initial; border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .horizontal-scrollbar { visibility: visible; }
+.markdown-preview .task-list-item-checkbox { position: absolute; margin: 0.25em 0px 0px -1.4em; }
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
+}
+
+pre.editor-colors {
+  background-color: white;
+  color: #555;
+}
+pre.editor-colors .invisible-character {
+  color: rgba(85, 85, 85, 0.2);
+}
+pre.editor-colors .indent-guide {
+  color: rgba(85, 85, 85, 0.2);
+}
+pre.editor-colors .wrap-guide {
+  background-color: rgba(85, 85, 85, 0.2);
+}
+pre.editor-colors .gutter {
+  color: #555;
+  background: white;
+}
+pre.editor-colors .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+pre.editor-colors .fold-marker:after {
+  color: #e87b00;
+}
+pre.editor-colors .invisible {
+  color: #555;
+}
+pre.editor-colors .selection .region {
+  background-color: #e1e1e1;
+}
+pre.editor-colors .bracket-matcher .region {
+  background-color: #C9C9C9;
+  opacity: .7;
+  border-bottom: 0 none;
+}
+pre.editor-colors.is-focused .cursor {
+  border-color: black;
+}
+pre.editor-colors.is-focused .selection .region {
+  background-color: #afc4da;
+}
+pre.editor-colors.is-focused .line-number.cursor-line-no-selection,
+pre.editor-colors.is-focused .line.cursor-line {
+  background-color: rgba(255, 255, 134, 0.34);
+}
+pre.editor-colors .syntax--source.syntax--gfm {
+  color: #444;
+}
+pre.editor-colors .syntax--gfm .syntax--markup.syntax--heading {
+  color: #111;
+}
+pre.editor-colors .syntax--gfm .syntax--link {
+  color: #888;
+}
+pre.editor-colors .syntax--gfm .syntax--variable.syntax--list {
+  color: #888;
+}
+pre.editor-colors .syntax--markdown .syntax--paragraph {
+  color: #444;
+}
+pre.editor-colors .syntax--markdown .syntax--heading {
+  color: #111;
+}
+pre.editor-colors .syntax--markdown .syntax--link {
+  color: #888;
+}
+pre.editor-colors .syntax--markdown .syntax--link .syntax--string {
+  color: #888;
+}
+.syntax--comment {
+  color: #999988;
+  font-style: italic;
+}
+.syntax--string {
+  color: #D14;
+}
+.syntax--string .syntax--source,
+.syntax--string .syntax--meta.syntax--embedded.syntax--line {
+  color: #5A5A5A;
+}
+.syntax--string .syntax--punctuation.syntax--section.syntax--embedded {
+  color: #920B2D;
+}
+.syntax--string .syntax--punctuation.syntax--section.syntax--embedded .syntax--source {
+  color: #920B2D;
+}
+.syntax--constant.syntax--numeric {
+  color: #D14;
+}
+.syntax--constant.syntax--language {
+  color: #606aa1;
+}
+.syntax--constant.syntax--character,
+.syntax--constant.syntax--other {
+  color: #606aa1;
+}
+.syntax--constant.syntax--symbol {
+  color: #990073;
+}
+.syntax--constant.syntax--numeric.syntax--line-number.syntax--find-in-files .syntax--match {
+  color: rgba(143, 190, 0, 0.63);
+}
+.syntax--variable {
+  color: #008080;
+}
+.syntax--variable.syntax--parameter {
+  color: #606aa1;
+}
+.syntax--keyword {
+  color: #222;
+  font-weight: bold;
+}
+.syntax--keyword.syntax--unit {
+  color: #445588;
+}
+.syntax--keyword.syntax--special-method {
+  color: #0086B3;
+}
+.syntax--storage {
+  color: #222;
+}
+.syntax--storage.syntax--type {
+  color: #222;
+}
+.syntax--entity.syntax--name.syntax--class {
+  text-decoration: underline;
+  color: #606aa1;
+}
+.syntax--entity.syntax--other.syntax--inherited-class {
+  text-decoration: underline;
+  color: #606aa1;
+}
+.syntax--entity.syntax--name.syntax--function {
+  color: #900;
+}
+.syntax--entity.syntax--name.syntax--tag {
+  color: #008080;
+}
+.syntax--entity.syntax--other.syntax--attribute-name {
+  color: #458;
+  font-weight: bold;
+}
+.syntax--entity.syntax--name.syntax--filename.syntax--find-in-files {
+  color: #E6DB74;
+}
+.syntax--support.syntax--constant,
+.syntax--support.syntax--function,
+.syntax--support.syntax--type {
+  color: #458;
+}
+.syntax--support.syntax--class {
+  color: #008080;
+}
+.syntax--invalid {
+  color: #F8F8F0;
+  background-color: #00A8C6;
+}
+.syntax--invalid.syntax--deprecated {
+  color: #F8F8F0;
+  background-color: #8FBE00;
+}
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--double.syntax--json,
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--json > .syntax--string.syntax--quoted.syntax--double.syntax--json .syntax--punctuation.syntax--string {
+  color: #000080;
+}
+.syntax--meta.syntax--structure.syntax--dictionary.syntax--value.syntax--json > .syntax--string.syntax--quoted.syntax--double.syntax--json {
+  color: #d14;
+}
+.syntax--meta.syntax--diff,
+.syntax--meta.syntax--diff.syntax--header {
+  color: #75715E;
+}
+.syntax--css.syntax--support.syntax--property-name {
+  font-weight: bold;
+  color: #333;
+}
+.syntax--css.syntax--constant {
+  color: #099;
+}
+</style>
+  </head>
+  <body class='markdown-preview' data-use-github-style><h3 id="introduction">Introduction</h3>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>As&nbsp;part&nbsp;of&nbsp;our&nbsp;standard&nbsp;recruitment&nbsp;procedures,&nbsp;we&nbsp;ask&nbsp;programming&nbsp;candidates&nbsp;to&nbsp;undertake&nbsp;a&nbsp;small&nbsp;programming&nbsp;exercise.&nbsp;This&nbsp;should&nbsp;be&nbsp;written&nbsp;in&nbsp;Python.&nbsp;The&nbsp;exercise&nbsp;consists&nbsp;of:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Part&nbsp;1:&nbsp;writing&nbsp;a&nbsp;program&nbsp;to&nbsp;solve&nbsp;a&nbsp;problem</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Part&nbsp;2:&nbsp;writing&nbsp;an&nbsp;analysis&nbsp;of&nbsp;other&nbsp;solutions&nbsp;to&nbsp;the&nbsp;problem.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Please&nbsp;design&nbsp;and&nbsp;code&nbsp;this&nbsp;program&nbsp;alone.&nbsp;While&nbsp;you&nbsp;will&nbsp;have&nbsp;colleagues&nbsp;in&nbsp;your&nbsp;normal&nbsp;working&nbsp;environment,&nbsp;we&nbsp;need&nbsp;to&nbsp;see&nbsp;how&nbsp;good&nbsp;you&nbsp;are,&nbsp;not&nbsp;how&nbsp;good&nbsp;your&nbsp;current&nbsp;friends&nbsp;or&nbsp;colleagues&nbsp;are.&nbsp;If&nbsp;we&nbsp;hire&nbsp;you&nbsp;and&nbsp;your&nbsp;level&nbsp;of&nbsp;competence&nbsp;is&nbsp;not&nbsp;as&nbsp;indicated&nbsp;by&nbsp;this&nbsp;test,&nbsp;we&nbsp;will&nbsp;have&nbsp;to&nbsp;carefully&nbsp;consider&nbsp;whether&nbsp;your&nbsp;employment&nbsp;should&nbsp;continue&nbsp;past&nbsp;the&nbsp;probation&nbsp;period.&nbsp;If&nbsp;you&nbsp;do&nbsp;copy&nbsp;code&nbsp;from&nbsp;elsewhere,&nbsp;for&nbsp;any&nbsp;reason&nbsp;(e.g.&nbsp;a&nbsp;library&nbsp;routine),&nbsp;please&nbsp;clearly&nbsp;indicate&nbsp;its&nbsp;source.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>You&nbsp;should&nbsp;be&nbsp;able&nbsp;to&nbsp;finish&nbsp;this&nbsp;exercise&nbsp;in&nbsp;4&nbsp;hours.&nbsp;Some&nbsp;of&nbsp;the&nbsp;best&nbsp;people&nbsp;can&nbsp;complete&nbsp;it&nbsp;in&nbsp;much&nbsp;less&nbsp;time,&nbsp;but&nbsp;the&nbsp;time&nbsp;that&nbsp;you&nbsp;take&nbsp;will&nbsp;depend&nbsp;ultimately&nbsp;on&nbsp;your&nbsp;skill&nbsp;and&nbsp;the&nbsp;amount&nbsp;of&nbsp;care&nbsp;you&nbsp;use.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>All&nbsp;code,&nbsp;comments&nbsp;and&nbsp;documentation&nbsp;should&nbsp;be&nbsp;in&nbsp;English&nbsp;(ideally&nbsp;using&nbsp;British&nbsp;spelling&nbsp;conventions).</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Submission</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>You&nbsp;should&nbsp;submit&nbsp;your&nbsp;complete&nbsp;source&nbsp;code&nbsp;and&nbsp;the&nbsp;analysis&nbsp;document&nbsp;(please&nbsp;note&nbsp;the&nbsp;names&nbsp;required&nbsp;for&nbsp;the&nbsp;files)&nbsp;in&nbsp;a&nbsp;zip&nbsp;file&nbsp;with&nbsp;the&nbsp;name&nbsp;listSorting-PythonTest_&lt;your&nbsp;name&gt;.zip&nbsp;-&nbsp;for&nbsp;example,&nbsp;listSorting-PythonTest_ChiMo.zip.&nbsp;You&nbsp;should&nbsp;email&nbsp;it&nbsp;to&nbsp;yding@nopsec.com&nbsp;and&nbsp;&nbsp;HYPERLINK&nbsp;&quot;</span><span class="syntax--markup syntax--underline syntax--link syntax--hyperlink"><span>mailto:msidagni@nopsec.com</span></span><span>&quot;&nbsp;msidagni@nopsec.com&nbsp;in&nbsp;the&nbsp;subject&nbsp;line&nbsp;&quot;Python&nbsp;test&nbsp;results&nbsp;from&nbsp;&lt;your&nbsp;name&gt;&quot;.</span></span></span></div></pre><h4 id="part-1-programming-problem">Part 1: Programming Problem</h4>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>You&nbsp;are&nbsp;to&nbsp;write&nbsp;a&nbsp;program&nbsp;that&nbsp;takes&nbsp;a&nbsp;list&nbsp;of&nbsp;strings&nbsp;containing&nbsp;integers&nbsp;and&nbsp;words&nbsp;and&nbsp;returns&nbsp;a&nbsp;sorted&nbsp;version&nbsp;of&nbsp;the&nbsp;list.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>The&nbsp;goal&nbsp;is&nbsp;to&nbsp;sort&nbsp;this&nbsp;list&nbsp;in&nbsp;such&nbsp;a&nbsp;way&nbsp;that&nbsp;all&nbsp;words&nbsp;are&nbsp;in&nbsp;alphabetical&nbsp;order&nbsp;and&nbsp;all&nbsp;integers&nbsp;are&nbsp;in&nbsp;numerical&nbsp;order.&nbsp;Furthermore,&nbsp;if&nbsp;the&nbsp;nth&nbsp;element&nbsp;in&nbsp;the&nbsp;list&nbsp;is&nbsp;an&nbsp;integer&nbsp;it&nbsp;must&nbsp;remain&nbsp;an&nbsp;integer,&nbsp;and&nbsp;if&nbsp;it&nbsp;is&nbsp;a&nbsp;word&nbsp;it&nbsp;must&nbsp;remain&nbsp;a&nbsp;word.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>In&nbsp;addition,&nbsp;the&nbsp;strings&nbsp;and&nbsp;integers&nbsp;may&nbsp;contain&nbsp;characters&nbsp;that&nbsp;are&nbsp;ascii&nbsp;symbols&nbsp;that&nbsp;neither&nbsp;belong&nbsp;to&nbsp;letter&nbsp;set&nbsp;nor&nbsp;digit&nbsp;set&nbsp;(i.e.&nbsp;&quot;#&quot;,&nbsp;&quot;%&quot;,&nbsp;&quot;;&quot;,&nbsp;etc).&nbsp;You&nbsp;are&nbsp;required&nbsp;to&nbsp;remove&nbsp;them&nbsp;during&nbsp;the&nbsp;process&nbsp;so&nbsp;that&nbsp;the&nbsp;output&nbsp;will&nbsp;contain&nbsp;only&nbsp;letters&nbsp;or&nbsp;digits.&nbsp;For&nbsp;example,&nbsp;if&nbsp;a&nbsp;string&nbsp;is&nbsp;&quot;sym*bo+l&quot;,&nbsp;the&nbsp;output&nbsp;should&nbsp;be&nbsp;&quot;symbol&quot;.&nbsp;If&nbsp;an&nbsp;integer&nbsp;is&nbsp;&quot;12%3&quot;,&nbsp;the&nbsp;output&nbsp;should&nbsp;be&nbsp;&quot;123&quot;.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>You&nbsp;don&#39;t&nbsp;have&nbsp;to&nbsp;worry&nbsp;about&nbsp;handling&nbsp;the&nbsp;following&nbsp;case:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Strings&nbsp;or&nbsp;integers&nbsp;that&nbsp;contain&nbsp;only&nbsp;non-letter-non-digit&nbsp;characters,&nbsp;like&nbsp;&quot;^!?&quot;,&nbsp;&quot;&amp;&quot;,&nbsp;etc.&nbsp;We&nbsp;will&nbsp;not&nbsp;test&nbsp;your&nbsp;program&nbsp;with&nbsp;this.</span></span></span></div></pre><h5 id="guidelines">Guidelines</h5>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>The&nbsp;guidelines&nbsp;below&nbsp;are&nbsp;indications&nbsp;of&nbsp;maximum&nbsp;size&nbsp;only.&nbsp;Your&nbsp;program&nbsp;should&nbsp;cope&nbsp;with&nbsp;longer&nbsp;words.&nbsp;However,&nbsp;you&nbsp;can&nbsp;use&nbsp;this&nbsp;information&nbsp;to&nbsp;help&nbsp;you&nbsp;select&nbsp;your&nbsp;algorithm.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>String&nbsp;length:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>100&nbsp;characters&nbsp;maximum&nbsp;(ASCII&nbsp;encoding&nbsp;only)</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Integer&nbsp;range:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>-999999&nbsp;to&nbsp;999999</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Number&nbsp;of&nbsp;words&nbsp;in&nbsp;string&nbsp;list:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>100,000&nbsp;maximum</span></span></span></div></pre><h3 id="input-output">Input/Output</h3>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>The&nbsp;input&nbsp;will&nbsp;be&nbsp;a&nbsp;file&nbsp;includes&nbsp;a&nbsp;single,&nbsp;possibly&nbsp;empty,&nbsp;line&nbsp;containing&nbsp;a&nbsp;space-separated&nbsp;list&nbsp;of&nbsp;strings&nbsp;to&nbsp;be&nbsp;sorted.&nbsp;Words&nbsp;will&nbsp;not&nbsp;contain&nbsp;spaces,&nbsp;will&nbsp;contain&nbsp;upper-case,&nbsp;lower-case&nbsp;letters&nbsp;a-z&nbsp;and&nbsp;maybe&nbsp;non-letter-non-digit&nbsp;characters.&nbsp;Integers&nbsp;will&nbsp;be&nbsp;in&nbsp;the&nbsp;range&nbsp;-999999&nbsp;to&nbsp;999999,&nbsp;and&nbsp;might&nbsp;also&nbsp;contain&nbsp;non-letter-non-digit&nbsp;characters.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>The&nbsp;program&nbsp;must&nbsp;be&nbsp;printed&nbsp;into&nbsp;a&nbsp;file&nbsp;named&nbsp;&quot;result.txt&quot;.&nbsp;The&nbsp;content&nbsp;of&nbsp;the&nbsp;file&nbsp;is&nbsp;the&nbsp;list&nbsp;of&nbsp;strings,&nbsp;sorted&nbsp;per&nbsp;the&nbsp;requirements&nbsp;above.&nbsp;Strings&nbsp;must&nbsp;be&nbsp;separated&nbsp;by&nbsp;a&nbsp;single&nbsp;space,&nbsp;with&nbsp;no&nbsp;leading&nbsp;space&nbsp;at&nbsp;the&nbsp;beginning&nbsp;of&nbsp;the&nbsp;line&nbsp;or&nbsp;trailing&nbsp;space&nbsp;at&nbsp;the&nbsp;end&nbsp;of&nbsp;the&nbsp;line.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>The&nbsp;program&nbsp;should&nbsp;take&nbsp;the&nbsp;input&nbsp;file&nbsp;name&nbsp;as&nbsp;the&nbsp;first&nbsp;argument,&nbsp;output&nbsp;file&nbsp;as&nbsp;the&nbsp;second&nbsp;argument:</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="syntax--meta syntax--paragraph syntax--text"><span>root:#&nbsp;&nbsp;./listSorting.py&nbsp;&lt;path-to-input-file&gt;/list.txt&nbsp;&lt;path-to-output-file&gt;/result.txt</span></span></span></div></pre><h4 id="examples">Examples</h4>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>You&nbsp;will&nbsp;find&nbsp;some&nbsp;test&nbsp;files&nbsp;sent&nbsp;along&nbsp;with&nbsp;this&nbsp;documentation.&nbsp;They&nbsp;are&nbsp;only&nbsp;made&nbsp;for&nbsp;the&nbsp;purpose&nbsp;of&nbsp;helping&nbsp;you&nbsp;to&nbsp;understand&nbsp;the&nbsp;question.&nbsp;Feel&nbsp;free&nbsp;to&nbsp;change&nbsp;them&nbsp;and&nbsp;make&nbsp;up&nbsp;any&nbsp;test&nbsp;cases&nbsp;you&nbsp;like.&nbsp;We&nbsp;will&nbsp;test&nbsp;your&nbsp;program&nbsp;with&nbsp;another&nbsp;test&nbsp;file.</span></span></span></div></pre><h4 id="quality">Quality</h4>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Quality&nbsp;is&nbsp;paramount.&nbsp;You&nbsp;should&nbsp;make&nbsp;sure&nbsp;that&nbsp;your&nbsp;program&nbsp;is&nbsp;coded&nbsp;in&nbsp;a&nbsp;professional&nbsp;manner&nbsp;and&nbsp;it&nbsp;should&nbsp;be&nbsp;thoroughly&nbsp;commented&nbsp;throughout.&nbsp;While&nbsp;running&nbsp;time&nbsp;is&nbsp;important&nbsp;to&nbsp;us,&nbsp;we&nbsp;do&nbsp;not&nbsp;need&nbsp;you&nbsp;to&nbsp;spend&nbsp;a&nbsp;lot&nbsp;of&nbsp;time&nbsp;tuning&nbsp;and&nbsp;we&nbsp;would&nbsp;like&nbsp;to&nbsp;see&nbsp;your&nbsp;first&nbsp;correct&nbsp;effort.&nbsp;Spend&nbsp;more&nbsp;time&nbsp;getting&nbsp;it&nbsp;right&nbsp;than&nbsp;getting&nbsp;it&nbsp;fast.&nbsp;Also&nbsp;make&nbsp;sure&nbsp;that&nbsp;your&nbsp;program&nbsp;is&nbsp;able&nbsp;to&nbsp;deal&nbsp;with&nbsp;exceptions.</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Part&nbsp;2:&nbsp;Analysis&nbsp;Document</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>In&nbsp;addition&nbsp;to&nbsp;the&nbsp;program,&nbsp;write&nbsp;an&nbsp;analysis&nbsp;of&nbsp;the&nbsp;algorithm&nbsp;you&nbsp;have&nbsp;chosen&nbsp;and&nbsp;other&nbsp;possible&nbsp;algorithms&nbsp;to&nbsp;solve&nbsp;the&nbsp;problem.&nbsp;Look&nbsp;at&nbsp;the&nbsp;expected&nbsp;running&nbsp;time&nbsp;of&nbsp;the&nbsp;different&nbsp;algorithms&nbsp;as&nbsp;a&nbsp;function&nbsp;of&nbsp;the&nbsp;number&nbsp;of&nbsp;words&nbsp;and&nbsp;the&nbsp;number&nbsp;of&nbsp;duplicate&nbsp;words.&nbsp;This&nbsp;should&nbsp;be&nbsp;no&nbsp;more&nbsp;than&nbsp;4k&nbsp;of&nbsp;plain&nbsp;ASCII&nbsp;text.&nbsp;It&nbsp;should&nbsp;be&nbsp;stored&nbsp;in&nbsp;a&nbsp;file&nbsp;called&nbsp;analysis.txt&nbsp;and&nbsp;submitted&nbsp;along&nbsp;with&nbsp;your&nbsp;program.</span></span></span></div></pre></body>
+</html>

@@ -1,0 +1,129 @@
+### Analysis of listSorting.py
+
+#### Initial notes
+
+##### reference materials
+
+I co-taught a Python seminar to middleschoolers last school year. I refreshed my memory using some of the examples ther e- code is at:
+https://devio.us/~mbubb/
+
+I also used the online reference for the string library and sorting.
+
+##### Python version
+ I tested this on python3 as well as python2 and wasnt sure which to submit - in real life I would have verified this first. Here I tried to be aware of where this would be an issue - for example:
+
+  list_word.translate(None, string.punctuation)
+
+would be done differently in Python3. I ended up using a different way of stripping bad chars.
+
+##### test data
+
+I used the test files but I wanted to have my own files - particularly for testing how long this was taking to run with large files.
+
+I added a simple function to generate list and file to use for testing:
+
+  genListStrings(10000)
+
+The single parameter was the number of strings in the file
+
+I used the bash builtin 'time' to check this.
+
+In terms of libraries used - string was the main one I found useful. I used a few others to help with input / output and with generating long lists for testing.
+
+##### strings vs integers
+I took this from the instructions:
+
+"You are to write a program that takes a list of strings containing integers and
+words and returns a sorted version of the list."
+
+and interpreted this to mean that the elements of the list were to be strings. When sorting I had to make sure that the strings containing integers would be sorted as integers not strings, ie
+
+101 1001 10001
+
+not
+
+10001 1001 101
+
+##### integer range
+I did not account for negative number here. The exercise describes a "range -999999 to 999999" but because '-' is one of the bad chars it would get stripped. I did not fix that here
+
+#### Functions
+
+There are 3 functions
+
+
+- genListStrings(10000) - this takes an integer and generates a list and file with the indicated number of test words
+
+- removeBadChars(file_inp) - this takes the file containing the list of words and returns a 'clean list' stripped of bad characters
+
+- sortList(cln_lst) - this takes a list and splits it into 2 lists containing integers and alpha strings. These are sorted and recombinded to retain the original order of elements (alpha strings and integer strings)
+
+
+
+##### genListStrings(10000)
+Not much to say about this one - it was useful to have for testing. One thing to fix is that I do nto ensure that all the strings are valid. Nome of my words were all bad chars which is against spec. Simple fix - I did nto take time to do it here.
+
+##### removeBadChars(file_inp)
+The initial iterations of this involved using a list instead of file input - in fact I gave very little thought to the external files and this needs much more robust error checking etc. My feeling is that there are standard 'house rules' for how to do these things and I would assume good input files...
+
+I liked the idea of using the builtin str.translate() and I got it to work but realized it would break with python3 the way I had it. I created a set of bad chars and checked each word to see if it had one of these. This is a lot faster than looping through the string and checking char by char.
+
+Then I loop through the word stripping bad chars - this is where I would use the translate builtin instead.
+
+##### sortList(cln_lst)
+First split the full list into alpha string list and integer list. Sort them both and reverse the lists (to make it simpler to pop the elements off). Reassemble the master list with the elements in the orignal integer - alpha sequence.
+
+Too many nested loops here. I think a hash table might simplify things. There are ways of simplifying the sorting in place. I would have had to do research on this.
+
+
+##### Sets and hash table
+
+For practice I recently did an exercise on a website called 'code fights' and learned a little about using sets and hash tables to make the sorting faster - including my submission  below as it was on my mind for this
+
+
+
+
+```
+
+#! /usr/bin/env python3
+#Note: Write a solution that only iterates over the string once and uses O(1) additional memory.
+
+#Given a string s, find and return the first instance of a non-repeating character in it. If there is no such character, return '_'.
+
+
+
+import random
+
+s = "ababababababcababaabd"
+
+def createStr(strLen):
+    strResult = ""
+    alpha = 'abcdefghijklmnopqrstuvwxyz'
+    for i in range(strLen):
+        strResult = strResult + alpha[random.randint(0,len(alpha)-3)]
+    strResult = strResult + alpha[len(alpha)-2]
+    strResult = strResult + alpha[len(alpha)-1]
+    return strResult
+
+
+def firstNotRepeatingCharacter(s):
+    print(s)
+    s_set = frozenset(s)
+    check_arr = {}
+    res = ""
+    if len(s) != len(s_set):
+        for entry in s_set:
+            if entry in check_arr:
+                s.replace(entry,"")
+        res = s[0]
+        print(s)
+    else:
+        res = "_"
+
+
+    return res
+
+
+print(firstNotRepeatingCharacter(createStr(50)))
+
+```
