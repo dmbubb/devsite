@@ -1,8 +1,9 @@
 ### Prometheus
 
-##### Monitoring framework
+Monitoring framework
+
 - developed by 2 ex-Google engineers at SoundCloud
-- modelled on BorgMon.
+- modeled on BorgMon.
 
 (This makes Prometheus somewhat of a cousin to Kubernetes - a descendant of Borg.)
 
@@ -23,11 +24,11 @@ And this is the thanks he got...
 
 ---
 
-#### Sub2
+#### AlertManager
 
 ---
 
-#### Sub3
+####
 
 +++
 
