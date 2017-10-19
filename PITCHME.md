@@ -1,24 +1,22 @@
 ### Prometheus
 
-- inspired by Google's Borgmon
+- inspired by Google's Borgmon (cousin to Kubernetes)
 - Cloud Native Computing Foundation
 - numerical timeseries based monitoring system
 
-(This makes Prometheus somewhat of a cousin to Kubernetes - a descendant of Borg.)
 
 +++
 The name comes from Greek mythology, Prometheus was a Titan who took fire from the gods and gave it to humans.
 ![Fire](promAssets/promFire.jpeg)
 
 +++
-this did not work out well for him
-![Chains](promAssets/prometheusInChains.jpg)
-
-+++
 ### Components
 
-- ecosystem - UNIX ethos 'one tool one task'
-![Chains](promAssets/prom_architecture.svg)
+UNIX ethos
+  - 'DOTADIW'
+  - ecosystem - work well with other tools
+
+![PromArch](promAssets/prom_architecture.svg)
 ---
 
 #### Prometheus
@@ -50,155 +48,30 @@ Storage
 APIs, Logging, Miscellaneous...
 
 ---
+Exporters
 
-Databases
-  - Aerospike exporter
-  - ClickHouse exporter
-  - Consul exporter __(official)__
-  - CouchDB exporter
-  - ElasticSearch exporter
-  - Memcached exporter __(official)__
-  - MongoDB exporter
-  - MSSQL server exporter
-  - MySQL server exporter __(official)__
-  - OpenTSDB Exporter
-  - PgBouncer exporter
-  - PostgreSQL exporter
-  - ProxySQL exporter
-  - Redis exporter
-  - RethinkDB exporter
-  - SQL query result set metrics exporter
-  - Tarantool metric library
-
----
-
-Hardware related
-  - apcupsd exporter
-  - IoT Edison exporter
-  - IPMI exporter
-  - knxd exporter
-  - Node/system metrics exporter __(official)__
-  - Ubiquiti UniFi exporter
-
-Messaging systems
-  - Kafka consumer group exporter
-  - Kafka ZooKeeper exporter
-  - NATS exporter
-  - NSQ exporter
-  - RabbitMQ exporter
-  - RabbitMQ Management Plugin exporter
-  - Mirth Connect exporter
-  - MQTT blackbox exporter
-
----
-
-Storage
-  - Ceph exporter
-  - Gluster exporter
-  - Hadoop HDFS FSImage exporter
-  - Lustre exporter
-  - ScaleIO exporter
-
-HTTP
-  - Apache exporter
-  - HAProxy exporter __(official)__
-  - Nginx metric library
-  - Nginx VTS exporter
-  - Passenger exporter
-  - Tinyproxy exporter
-  - Varnish exporter
-  - WebDriver exporter
-
----
-
-APIs
-  - AWS ECS exporter
-  - AWS Health exporter
-  - AWS SQS exporter
-  - Cloudflare exporter
-  - DigitalOcean exporter
-  - Docker Cloud exporter
-  - Docker Hub exporter
-  - GitHub exporter
-  - InstaClustr exporter
-  - Mozilla Observatory exporter
-  - OpenWeatherMap exporter
-  - Pagespeed exporter
-  - Rancher exporter
-  - Speedtest exporter
-
-
-Logging
-  - Google's mtail log data extractor
-  - Grok exporter
-
----
-
-Other monitoring systems
-  - Akamai Cloudmonitor exporter
-  - AWS CloudWatch exporter __(official)__
-  - Cloud Foundry Firehose exporter
-  - Collectd exporter __(official)__
-  - Google Stackdriver exporter
-  - Graphite exporter __(official)__
-  - Heka dashboard exporter
-  - Heka exporter
-  - InfluxDB exporter __(official)__
-  - JavaMelody exporter
-  - JMX exporter __(official)__
-  - Munin exporter
-  - Nagios / Naemon exporter
-  - New Relic exporter
-  - NRPE exporter
-  - Pingdom exporter
-  - scollector exporter
-  - Sensu exporter
-  - SNMP exporter __(official)__
-  - StatsD exporter __(official)__
-
----
-
-Miscellaneous
-  - BIG-IP exporter
-  - BIND exporter
-  - Blackbox exporter __(official)__
-  - BOSH exporter
-  - cAdvisor
-  - Dovecot exporter
-  - Jenkins exporter
-  - Kemp LoadBalancer exporter
-  - Meteor JS web framework exporter
-  - Minecraft exporter module
-  - PHP-FPM exporter
-  - PowerDNS exporter
-  - Process exporter
-  - rTorrent exporter
-  - Script exporter
-  - Shield exporter
-  - SMTP/Maildir MDA blackbox prober
-  - Transmission exporter
-  - Unbound exporter
-  - Xen exporter
-
-+++
-
-##### Other Software exposing Prometheus metrics
-  - Ceph
-  - Collectd
-  - CRG Roller Derby Scoreboard *
-  - Etcd  *
-  - FreeBSD Kernel
-  - Kubernetes  *
-  - Linkerd
-  - Netdata
-  - Pretix
-  - Quobyte  *
-  - RobustIRC
-  - SkyDNS  *
-  - Telegraf
-  - Weave Flux
-
-  \* _through Prometheus client library_
+Databases | Hardware/OS |	Storage	| APIs |	Misc	| Software exposing Prom metrics	| Messaging |	HTTP |	Logging
+------------ |------------ |------------ |------------ |------------ |------------
+Aerospike  | apcupsd  | Ceph  | AWS ECS  | BIGIP  | Ceph | Kafka consumer group  | Apache  | Google's mtail log data extractor			
+ClickHouse  | IoT Edison  | Gluster  | AWS Health  | BIND  | Collectd | Kafka ZooKeeper  | HAProxy  __(official)__ | Grok 			
+Consul  __(official)__ | IPMI  | Hadoop HDFS FSImage  | AWS SQS  | Blackbox  __(official)__ | CRG Roller Derby Scoreboard __(client lib)__	 | NATS  | Nginx metric library				
+CouchDB  | knxd  | Lustre  | Cloudflare  | BOSH  | Etcd  __(client lib)__	 | NSQ  | Nginx VTS 				
+ElasticSearch  | Node/system metrics  __(official)__ | ScaleIO  | DigitalOcean  | cAdvisor | FreeBSD Kernel | RabbitMQ  | Passenger 				
+Memcached  __(official)__ | Ubiquiti UniFi 	 | | Docker Cloud  | Dovecot  | Kubernetes  __(client lib)__	 | RabbitMQ Management Plugin  | Tinyproxy 				
+MongoDB 		| | | Docker Hub  | Jenkins  | Linkerd | Mirth Connect  | Varnish 				
+MSSQL server 		| | | GitHub  | Kemp LoadBalancer  | Netdata | MQTT blackbox  | WebDriver 				
+MySQL server  __(official)__		| | | InstaClustr  | Meteor JS web framework  | Pretix						
+OpenTSDB Exporter		| | | Mozilla Observatory  | Minecraft  module | Quobyte  __(client lib)__							
+PgBouncer 		| | | OpenWeatherMap  | PHPFPM  | RobustIRC						
+PostgreSQL 		| | | Pagespeed  | PowerDNS  | SkyDNS  __(client lib)__							
+ProxySQL 		| | | Rancher  | Process  | Telegraf						
+Redis 		| | | Speedtest  | rTorrent  | Weave Flux						
+RethinkDB 		| |	| | Script 							
+SQL query result set metrics 			| | | | Shield 							
+Tarantool metric library			|| | | SMTP/Maildir MDA blackbox prober			
+| | | |   Transmission 							
+| | | |   Unbound 							
+| | | |   Xen 					
 
 ---
 
@@ -213,7 +86,7 @@ Miscellaneous
   - redis
   - Forensiq Pixel (custom)
 
-  +++
++++
 
 ### Links and contact
 
