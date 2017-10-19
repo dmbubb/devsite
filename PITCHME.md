@@ -49,7 +49,7 @@ APIs, Logging, Miscellaneous...
 
 ---
 Exporters
-![PromExp](promAssets/PromExport.png)
+![PromExp](promAssets/promExport.png)
 ---
 
 ##### Prometheus Exporters in use
