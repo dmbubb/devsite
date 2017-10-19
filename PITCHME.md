@@ -48,7 +48,6 @@ Storage
 APIs, Logging, Miscellaneous...
 
 ---
-Exporters
 ![PromExp](promAssets/promExport.png)
 ---
 
