@@ -54,18 +54,18 @@ Databases | Hardware/OS |	Storage	| APIs |	Misc	| Software exposing Prom metrics
 ------------ |------------ |------------ |------------ |------------ |------------
 Aerospike  | apcupsd  | Ceph  | AWS ECS  | BIGIP  | Ceph | Kafka consumer group  | Apache  | Google's mtail log data extractor			
 ClickHouse  | IoT Edison  | Gluster  | AWS Health  | BIND  | Collectd | Kafka ZooKeeper  | HAProxy  __(official)__ | Grok 			
-Consul  __(official)__ | IPMI  | Hadoop HDFS FSImage  | AWS SQS  | Blackbox  __(official)__ | CRG Roller Derby Scoreboard __(client lib)__	 | NATS  | Nginx metric library				
+Consul  __(official)__ | IPMI  | Hadoop HDFS FSImage  | AWS SQS  | Blackbox  __(official)__ | CRG Roller Derby Scoreboard __(client lib)__	 | NATS  | Nginx metric library				<!-- .element: class="fragment" -->
 CouchDB  | knxd  | Lustre  | Cloudflare  | BOSH  | Etcd  __(client lib)__	 | NSQ  | Nginx VTS 				
 ElasticSearch  | Node/system metrics  __(official)__ | ScaleIO  | DigitalOcean  | cAdvisor | FreeBSD Kernel | RabbitMQ  | Passenger 				
 Memcached  __(official)__ | Ubiquiti UniFi 	 | | Docker Cloud  | Dovecot  | Kubernetes  __(client lib)__	 | RabbitMQ Management Plugin  | Tinyproxy 				
 MongoDB 		| | | Docker Hub  | Jenkins  | Linkerd | Mirth Connect  | Varnish 				
-MSSQL server 		| | | GitHub  | Kemp LoadBalancer  | Netdata | MQTT blackbox  | WebDriver 				
+MSSQL server 		| | | GitHub  | Kemp LoadBalancer  | Netdata | MQTT blackbox  | WebDriver <!-- .element: class="fragment" -->				
 MySQL server  __(official)__		| | | InstaClustr  | Meteor JS web framework  | Pretix						
 OpenTSDB Exporter		| | | Mozilla Observatory  | Minecraft  module | Quobyte  __(client lib)__							
 PgBouncer 		| | | OpenWeatherMap  | PHPFPM  | RobustIRC						
 PostgreSQL 		| | | Pagespeed  | PowerDNS  | SkyDNS  __(client lib)__							
 ProxySQL 		| | | Rancher  | Process  | Telegraf						
-Redis 		| | | Speedtest  | rTorrent  | Weave Flux						
+Redis 		| | | Speedtest  | rTorrent  | Weave Flux						<!-- .element: class="fragment" -->
 RethinkDB 		| |	| | Script 							
 SQL query result set metrics 			| | | | Shield 							
 Tarantool metric library			|| | | SMTP/Maildir MDA blackbox prober			
