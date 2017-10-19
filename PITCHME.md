@@ -1,26 +1,29 @@
 ### Prometheus
 
-Monitoring framework
-
-- developed by 2 ex-Google engineers at SoundCloud
-- modeled on BorgMon.
+- inspired by Google's Borgmon
+- Cloud Native Computing Foundation
+- numerical timeseries based monitoring system
 
 (This makes Prometheus somewhat of a cousin to Kubernetes - a descendant of Borg.)
 
 +++
-The name comes from Greek mythology, Prometheus was a Titan who gave fire to humans.
+The name comes from Greek mythology, Prometheus was a Titan who took fire from the gods and gave it to humans.
 ![Fire](promAssets/promFire.jpeg)
 
 +++
-And this is the thanks he got...
+this did not work out well for him
 ![Chains](promAssets/prometheusInChains.jpg)
 
 +++
 ### Components
 
+- ecosystem - UNIX ethos 'one tool one task'
+![Chains](promAssets/prom_architecture.svg)
 ---
 
 #### Prometheus
+- core service
+- pull metrics from assets
 
 ---
 
@@ -33,6 +36,14 @@ And this is the thanks he got...
 +++
 
 ##### Prometheus Exporters
+Databases
+Hardware
+Messaging systems
+Storage
+APIs, Logging, Miscellaneous...
+
+---
+
 Databases
   - Aerospike exporter
   - ClickHouse exporter
@@ -52,6 +63,7 @@ Databases
   - SQL query result set metrics exporter
   - Tarantool metric library
 
+---
 
 Hardware related
   - apcupsd exporter
@@ -60,7 +72,6 @@ Hardware related
   - knxd exporter
   - Node/system metrics exporter __(official)__
   - Ubiquiti UniFi exporter
-
 
 Messaging systems
   - Kafka consumer group exporter
@@ -71,6 +82,8 @@ Messaging systems
   - RabbitMQ Management Plugin exporter
   - Mirth Connect exporter
   - MQTT blackbox exporter
+
+---
 
 Storage
   - Ceph exporter
@@ -88,6 +101,8 @@ HTTP
   - Tinyproxy exporter
   - Varnish exporter
   - WebDriver exporter
+
+---
 
 APIs
   - AWS ECS exporter
@@ -110,6 +125,7 @@ Logging
   - Google's mtail log data extractor
   - Grok exporter
 
+---
 
 Other monitoring systems
   - Akamai Cloudmonitor exporter
@@ -133,6 +149,7 @@ Other monitoring systems
   - SNMP exporter __(official)__
   - StatsD exporter __(official)__
 
+---
 
 Miscellaneous
   - BIG-IP exporter
@@ -156,6 +173,8 @@ Miscellaneous
   - Unbound exporter
   - Xen exporter
 
++++
+
 ##### Other Software exposing Prometheus metrics
   - Ceph
   - Collectd
@@ -174,7 +193,20 @@ Miscellaneous
 
   \* _through Prometheus client library_
 
-+++
+---
+
+##### Prometheus Exporters in use
+
+  - Node/system metrics exporter __(official)__
+  - Memcached exporter __(official)__
+  - MySQL server exporter __(official)__
+  - HAProxy exporter __(official)__
+  - Blackbox exporter __(official)__
+  - cAdvisor
+  - redis
+  - Forensiq Pixel (custom)
+
+  +++
 
 ### Links and contact
 
