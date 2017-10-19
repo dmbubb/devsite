@@ -24,10 +24,17 @@ this did not work out well for him
 #### Prometheus
 - core service
 - pull metrics from assets
+  - application code
+  - exporter
+  - from push gateway
+
+
+
 
 ---
 
 #### AlertManager
+- clearing house for alerts
 
 ---
 
