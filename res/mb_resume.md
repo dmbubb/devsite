@@ -81,7 +81,7 @@ Education
 Additional Experience
 ---------------------
 
-– 2016 | EMR license , **[Hoboken Volunteer Ambulance][]**    
+– 2016 | licensed EMR, ambulance driver  **[Hoboken Volunteer Ambulance][]**    
 – 2014–present | middle school volunteer teacher (Scratch, Python), **[Elysian Charter School][]**    
 – 2013-2015 | technical volunteer, **[Milemesh][]**.    
 – 2012-present | emergency shelter and communications, **[Hoboken CERT][]**.    
