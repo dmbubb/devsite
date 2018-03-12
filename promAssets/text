@@ -1,0 +1,14 @@
+Today I will talk about our experiences wth Prometheus, a monitoring application. Previous talks have discussed the proliferation of squads or teams across the organization. With this it becomes important to have good ways of sharing information. I think there is potential for Prometheus to help with this.
+
+First who is Prometheus.
+
+From Greek mythology, the Titan Prometheus gave the humans the gifts of fire and metalwork.
+
+
+Zeus was so happy about this that he had Prometheus chained to a rock and sent an eagle to tear out his liver. At night the liver regenerated so this could continue. Perhaps the founders of the project were thinking of software that would be resilient and self-healing.
+
+The name means "Forethinker" and it is more likely the founders of the Prometheus project were thinking of it as a tool which gives the ability to use monitoring data proactively rather than stumbling around in the typically reactive state of alerting and monitoring.
+
+In any event Prometheus comes from the desire of two ex-Google engineers to recreate the functionality of BorgMon - the monitoring suite of Google's Borg which in turn is the predecessor of Kubernetes... Like Kubernetes it is a key member of the Cloud Native Computing Foundation, a driving force behind the standards for and open source cloud software stack.
+
+When I joined Forensiq there was a hodgepodge of monitoring - graphite, sensu, nagios, zabbix and more sas offerings. We wanted to consolidate and have something more flexible and of course something scalable. << Prometheus fit the bill>>
