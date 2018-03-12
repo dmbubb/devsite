@@ -1,7 +1,7 @@
 Michael Bubb
 =============
 
-Phone: +1.646.783.8769    
+Phone: +1.201.736.0870    
 Email: <michael.bubb@gmail.com>    
 LinkedIn: [linkedin.com/in/mpbubb][]    
 GitHub: [github.com/mbubb][]    
@@ -9,7 +9,7 @@ gpgKey: [mbubb.devio.us/gpg/pub_key.asc][]
 
 Profile
 -------
-Linux Systems Engineer with over a decade of root access on enterprise Linux environments. I have specialized in datacenter buildouts including Hadoop clusters, Netezza analytics subnets and Aerospike clusters. Often in  a 'sole sysadmin' role, I have built and lead teams as organizations have gone through rapid growth. Currently am working to improve tool building skills as well as gaining experience with infrastructure management frameworks like Ansible and Kubernetes.
+Linux Systems Engineer with over a decade of root access on enterprise Linux environments. I managed datacenter buildouts as well as cloud infrastructure (mostly GCE). Often in  a 'sole sysadmin' role, I have built and lead teams as organizations have gone through rapid growth. Current focuses include: CI/CD with Github, Ansible and Kubernetes; Prometheus monitoring deployments.
 
 
 Industry Experience
@@ -22,9 +22,7 @@ Industry Experience
 –     Infrastructure management (DNS, System and Network Monitoring)    
 –     Build/Deploy with Ansible-Jenkins-Github    
 –     Ansible project lead/ Jenkins admin    
-–     Working towards CI with Automation engineer (Kubernetes)    
-–     Hiring remote and local engineers    
-–     Vendor relations (datacenters, service providers)    
+–     deployments to Google Cloud and AWS 
 
 **Systems Engineer** | August 2014 – May 2015    
 [OnDeck][]  New York, NY.
