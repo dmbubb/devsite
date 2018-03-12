@@ -9,7 +9,7 @@ gpgKey: [mbubb.devio.us/gpg/pub_key.asc][]
 
 Profile
 -------
-Linux Systems Engineer with over a decade of root access on enterprise Linux environments. I managed datacenter buildouts as well as cloud infrastructure (mostly GCE). Often in  a 'sole sysadmin' role, I have built and lead teams as organizations have gone through rapid growth. Current focuses include: CI/CD with Github, Ansible and Kubernetes; Prometheus monitoring deployments.
+Linux Systems Engineer with over a decade of root access on enterprise Linux environments. I have managed datacenter buildouts as well as cloud infrastructure (mostly GCE). Often starting in  a 'sole systems role', I have built and lead teams as organizations have gone through rapid growth. Current focuses include: CI/CD with Github, Ansible and Jenkins; Prometheus monitoring deployments.
 
 
 Industry Experience
@@ -22,7 +22,7 @@ Industry Experience
 –     Infrastructure management (DNS, System and Network Monitoring)    
 –     Build/Deploy with Ansible-Jenkins-Github    
 –     Ansible project lead/ Jenkins admin    
-–     deployments to Google Cloud and AWS 
+–     deployments to Google Cloud and AWS
 
 **Systems Engineer** | August 2014 – May 2015    
 [OnDeck][]  New York, NY.
